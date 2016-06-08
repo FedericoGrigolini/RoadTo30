@@ -1,4 +1,5 @@
 
+
 public enum Partito {
 	PENSIONATI,
 	FELICE,
@@ -18,4 +19,7 @@ public enum Partito {
 				return pos;
 		throw new RuntimeException("impossibile");
 	}
+
+	
 }
+
