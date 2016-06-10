@@ -90,7 +90,7 @@ public class Iscrizione implements Comparable<Iscrizione> {
 	}
 	
 	public String toString() {
-		return this.getUtente().toString() +" : iscritto dall'inizio di "+this.mStart+" "+this.aStart+" fino alla fine di "+this.mFinish+" "+this.aFinish+"\n";
+		return this.getUtente().toString() +" : iscritto dall'inizio di "+this.mStart+" "+this.aStart+" fino alla fine di "+this.mFinish+" "+this.aFinish;
 	}
 	
 	private int getDurata(){
