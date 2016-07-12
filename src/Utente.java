@@ -1,4 +1,3 @@
-
 public class Utente {
 	protected String nome;
 	protected String cognome;
@@ -25,12 +24,8 @@ public class Utente {
 	}
 	
 	public int hashCode() { 
-		int n=this.nome.hashCode();
-		int c=this.cognome.hashCode();
-		Math.pow(n, c);
-		return (int)Math.sqrt(Math.pow((n-this.cognome.length()), 2)+Math.pow((c-this.cognome.length()), 2));
+		return nome.hashCode() ^ cognome.hashCode();
 	}
-	
 	
 	public int compareTo(Utente other) {  
 		if(this.getSurname().compareTo(other.getSurname())==0){
@@ -43,5 +38,4 @@ public class Utente {
 	public String toString() { 
 		return this.nome+" "+this.cognome;
 	}
-
 }
